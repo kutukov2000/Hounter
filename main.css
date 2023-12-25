@@ -152,6 +152,8 @@ header {
 
 .find-the-place {
 
+    display: flex;
+
     height: 500px;
 
     h2 {
@@ -183,6 +185,42 @@ header {
 
         display: flex;
         justify-content: space-between;
+    }
+
+    .cards {
+        display: flex;
+        gap: 16px;
+
+        position: relative;
+        top: 75%;
+        left: 12.5%;
+
+        overflow: hidden;
+
+        >div {
+            display: flex;
+            align-items: center;
+
+            padding: 24px;
+            gap: 16px;
+
+            height: fit-content;
+
+            background-color: #fff;
+            border-radius: 32px;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+
+            }
+
+            p {
+                margin: 0;
+                white-space: nowrap;
+            }
+        }
     }
 }
 
